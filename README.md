@@ -1,1 +1,66 @@
-IyBweXRob24tY3liZXJzZWN1cml0eS1jaGVhdC1zaGVldApBIHB1YmxpYyBweXRob24gYW5kIGN5YmVyc2VjdXJpdHkgY2hlYXQgc2hlZXQKCi0tLQojIyMgQmFzaWNzICYgTmV0d29ya2luZwoKKipZ16XZmdeZ16og15DXldeR15mZ16fXmCDXqtep16fXldeeo9eUINeR16HXmdeh15kgKFNvY2tldCk6KioKYGBgcHl0aG9uCnMgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pCmBgYAoKKipZp9eZ16HXmdeVINeU16rXl9eR16jXldeqINec15vXqteV15HXqiBJUCDXlde015V16XmCDXnteh15XXmdeZnToqKgpgYBgcHl0aG9uCnMuY29ubmVjdCgoIjEyNy4wLjAuMSIsIDQ0MykpCmBgYAoKKipZqcec15nXl9eqINeR16fXqeeqIEdFVCDXpNek15XXmNeUINec15DXqteSOioKYGBgcHl0aG9uCnJlc3BvbnNlID0gcmVxdWVzdHMuZ2V0KCJodHRwczovL3RhcmdldC5jb20iKQpgYGEKCioqWdeeXdec15nXpNeqINeULUhlYWRlcnMg16nXl9ep16jXqiDXnteX15YZ16nXmToqKgpgYBgcHl0aG9uCnByaW50KHJlc3BvbnNlLmhlYWRlcnMpCmBgYAoKKipXldeW16nXo9eqINeY16fXodeYINecLUhhc2gg15nteR15XXkiBTSEEyNTY6KioKYGBgcHl0aG9uCmhhc2hsaWIuc2hhMjU2KGIibXlfcGFzc3dvcmQiKS5oZXhkaWdlc3QoKQpgYGEKCioqXpTXqteZ16fXqiDXpNeV15HXpSDXnNen16jXmdeDXpTXZCDXkeec15PXmToqKgpgYBgcHl0aG9uCndpdGggb3BlbigibGlzdC50eHQiLCAiciIpIGFzIGZpbGU6CmBgYAoKKipX15HXodeqINeo15XXldeX15nXneDXmCDXldeZ16jXmdeT15V6INep16V16XlCDXnteX15fXodeYOioKYGBgcHl0aG9uCmNsZWFuX2xpbmUgPSBsaW5lLnN0cmlwKCkKYGBnCgotLS0KIyMjINen15nXp9eV15Mg15XXo9eZ15TXldeXINeh15Vk15XXqiAoRW5jb2RpbmcgJiBEYXRhKQoKKipXp9eZ16fXl9eqINeY16fXodeYINec16TXldeR157XmSBQmXNlNjQgKNeo15nXnteV16kg15zXlNei15HXqteV16og16TXmdeZ15zXldeT15PXmSk6KioKYGBgcHl0aG9uCmltcG9ydCBiYXNlNjQKZW5jb2RlZCA9IGJhc2U2NC5iNjRlbmNvZGUoYiJzZWNyZXRfZGF0YSIpLmRlY29kZSgpCmBgYAoKKipXpNeV16o6INep15wg157Xm9eo15XXldeqIEJhc2U2NCDXl9eW16jXlCDXnNek15fXodeYINeU167Xp9eV16jXmToqKgpgYBgcHl0aG9uCmRlY29kZWQgPSBiYXNlNjQuYjY0ZGVjb2RlKCJjMlZqZFhKclpYUnpZWFJoIikuZGVjb2RlKCkKYGBnCioqXpTeY9eZ15DXqiDXntep16rXo9eUINeh15HXmdeR15QgKNeX16nXldeRIOen15PXmSDXnNXkSDXnNep167XldeoINeh15nXodeV15DXldeRINeR16rXldeatCDXpNeV15PXmSk6KioKYGBgcHl0aG9uCmltcG9ydCBvcwphcGlfa2V5ID0gb3MuZ2V0ZW52KCJBUElfS0VZIikKYGBnCioqWdcW16nXmdeZ16og157Xl9eo15VXm9eqINeo157Xp9eV157XnNeo15nXqiDXnteQ15VXnXmdeqICjXnNee16nXnCDXoteR15XXayBUb2tlbiDXldeZ16bXmdeV16og15fXodeZ157XlCk6KioKYGBgcHl0aG9uCmltcG9ydCBzZWNyZXRzCnRva2VuID0gc2VjcmV0cy50b2tlbl9oZXgoMTYpCmBgYA==
+# python-cybersecurity-cheat-sheet
+A public python and cybersecurity cheat sheet
+
+---
+### Basics & Networking
+
+**יצירת אובייקט תקשורת בסיסי (Socket):**
+```python
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+```
+
+**ניסיון התחברות לכתובת IP ופורט מסוים:**
+```python
+s.connect(("127.0.0.1", 443))
+```
+
+**שליחת בקשת GET פשוטה לאתר:**
+```python
+response = requests.get("https://target.com")
+```
+
+**שליפת ה-Headers שהשרת מחזיר:**
+```python
+print(response.headers)
+```
+
+**הצפנת טקסט ל-Hash מסוג SHA256:**
+```python
+hashlib.sha256(b"my_password").hexdigest()
+```
+
+**פתיחת קובץ לקריאה בלבד:**
+```python
+with open("list.txt", "r") as file:
+```
+
+**הסרת רווחים או ירידות שורה מטקסט:**
+```python
+clean_line = line.strip()
+```
+
+---
+### קידוד וניהול מידע (Encoding & Data)
+
+**הפיכת טקסט לפורמט Base64 (שימושי להעברת פיילואודים):**
+```python
+import base64
+encoded = base64.b64encode(b"secret_data").decode()
+```
+
+**פענוח של מחרוזת Base64 חזרה לטקסט המקורי:**
+```python
+decoded = base64.b64decode("c2VjcmV0X2RhdGE=").decode()
+```
+
+**קריאת משתנה סביבה (חשוב כדי לא לשמור סיסמאות בתוך הקוד):**
+```python
+import os
+apikeyk = os.getenv("API_KEY")
+```
+
+**יצירת מחרוזת רנדומלית מאובטחת (למשל עבור Token או מלח לסיסמה):**
+```python
+import secrets
+token = secrets.token_hex(16)
+```
